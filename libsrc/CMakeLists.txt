@@ -21,7 +21,7 @@ IF(MSEED_BUILD)
         SET(MAKE_CMD nmake /F Makefile.win)
         SET(mseed_lib libmseed.lib)
     ELSE (MSVC)
-        SET(MAKE_CMD CFLAGS=\"-std=c99\" make)
+        SET(MAKE_CMD make)
         SET(mseed_lib libmseed.a)
     ENDIF (MSVC)
 #Pulls in libmseed and build it
