@@ -8,7 +8,7 @@ INCLUDE_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}"
         "${CMAKE_CURRENT_BINARY_DIR}" ${WJELEMENT_INCLUDE_DIRS} ${MSEED_INCLUDE_DIRS})
 
 ADD_LIBRARY(mseed3-common STATIC ${mseed3-common_SRCS} mseed3-common/regular_file.c)
-target_link_libraries(mseed3-common ${MSEED_LIBRARIES} ${WJELEMENT_LIBRARIES})
+target_link_libraries(mseed3-common ${MSEED_LIBRARIES} ${WJELEMENT_LIBRARIES} yyjson)
 
 #check for older linux for defualting to c89, force to c99
 IF (${CMAKE_VERSION} VERSION_LESS 3.1)

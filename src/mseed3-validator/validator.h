@@ -29,6 +29,6 @@ check_payloads(struct extra_options_s *options, FILE *input, uint32_t payload_le
 
 bool check_payload_text(struct extra_options_s *options, uint32_t payload_len, char *buffer);
 
-bool is_valid_gbl;
+extern bool is_valid_gbl;
 
 #endif /* __MSEED3VALIDATOR_VALIDATOR_H__ */

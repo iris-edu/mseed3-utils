@@ -24,12 +24,16 @@ IF(MSEED_BUILD)
     UNSET(MSEED_LIBRARY CACHE)
     SET (MSEED_SEARCH_PATHS
         "${CMAKE_CURRENT_BINARY_DIR}/libsrc/libmseed/src/MSEED_LIBRARY-build"
-        "/usr/\n"
-        "/usr/local/")
+        "/usr/"
+        "/usr/local/"
+        #"$ENV{HOME}/local/"
+        )
 ELSE(MSEED_BUILD)
    SET (MSEED_SEARCH_PATHS
         "/usr/"
-        "/usr/local/")
+        "/usr/local/"
+        #"$ENV{HOME}/local/"
+        )
 ENDIF(MSEED_BUILD)
 
 

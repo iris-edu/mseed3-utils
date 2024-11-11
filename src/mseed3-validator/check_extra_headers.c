@@ -15,6 +15,7 @@
 static void schema_error_func (void *client, const char *format, ...);
 static WJElement load_schema_func (const char *name, void *client, const char *file, const int line);
 static void schema_free (WJElement schema, void *client);
+bool is_valid_gbl;
 
 
 
